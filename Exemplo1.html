@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exeplo1</title>
+  </head>
+  <body>
+    <script>
+      "use strict";
+      document.write("Ola mundo");
+      var frase = "<br/> Isto e um texto ";
+
+      document.write(frase + " : " + typeof frase);
+      document.write("<br/>");
+      var num1 = 6;
+      let num2 = 4;
+      if (num1 > 5) {
+        let num2 = 10;
+        document.write(num2);
+      }
+      document.write("<br/>");
+      document.write(num2 + " : " * typeof num2);
+      document.write(frase);
+      //caixa de alerta
+      alert("Hello!");
+      //prompt
+      var nome = prompt("Qual o teu nome");
+      document.write("<br/>");
+      document.write(nome);
+      //confirm
+      var resultado = confirm(" Are you the boss");
+      if (resultado) document.write("hi boss");
+      else document.write("bye");
+
+      //concatenacoes
+      document.write("<br/>");
+      let a = 10,
+        b = 5;
+
+      document.write("A soma entre a e b e : + a + b");
+      document.write("<br/>");
+      document.write(a + b);
+      document.write("<br/>");
+      document.write("A soma entre a e b e :" + a + b);
+    </script>
+  </body>
+</html>
