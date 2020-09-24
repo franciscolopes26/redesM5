@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let nomeAluno = prompt("qual o nome do aluno");
+      var nota = Number(prompt("qual a nota 1"));
+      var nota2 = Number(prompt("qual a nota 2"));
+      var nota3 = Number(prompt("qual a nota 1"));
+      var media = (nota + nota2 + nota3) / 3;
+
+      if (nomeAluno != 0) {
+        document.write(nomeAluno);
+        document.write("<br/>");
+        document.write(nota);
+        document.write("<br/>");
+        document.write(nota2);
+        document.write("<br/>");
+        document.write(nota3);
+        document.write("<br/>");
+        document.write(media);
+        let aprovado = media > 9.5 ? "aprovado" : "reprovado";
+        document.write(
+          "o aluno" + nomeAluno + "obteve a media de " + media + aprovado
+        );
+      } else document.write("ainda nao existem alunos");
+    </script>
+  </body>
+</html>

@@ -43,6 +43,31 @@
       document.write(a + b);
       document.write("<br/>");
       document.write("A soma entre a e b e :" + a + b);
+      //conversoes tipo de dados
+      let value = true;
+      document.write("<br/>Value:" + typeof value);
+      value = String(value);
+      document.write("<br/>Value:" + typeof value);
+
+      let bol = 1;
+      document.write("<br/>Value:" + typeof bol);
+      bolo = Boolean(bol);
+      document.write("<br/>Value:" + typeof bol);
+      //incremento
+      let x = 5,
+        y;
+      document.write("<br/>");
+
+      let idade = 19;
+      let maiorIdade = idade > 18 ? true : false;
+
+      let valores = [1, 2, 3, 4];
+      for (let i = 0; i < valores.length; i++) {
+        document.write("<br/>", valores[i]);
+      }
+      valores.forEach((element) => {
+        document.write("<br/>", element);
+      });
     </script>
   </body>
 </html>
