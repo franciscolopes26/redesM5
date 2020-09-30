@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var nomes = [
+        "Ana",
+        "Maria",
+        "Manuel",
+        "Rodrigo",
+        "Rui",
+        "António",
+        "Sara",
+      ];
+      var tamanho = nomes.length;
+      document.write("<br/>Value:" + tamanho);
+      document.write("<br/>");
+      var newLength = nomes.push("francisco");
+      var newLength = nomes.unshift("Joana");
+      var last = nomes.pop();
+      var first = nomes.shift();
+      var rand = nomes[(Math.random() * tamanho) | 0];
+      document.write("<br/>");
+      document.write(rand);
+
+      var pos = 3,
+        n = 6;
+
+      var removedItems = nomes.splice(pos, n);
+
+      for (let i = 0; i < 10; i++) {
+        if (i == 1) {
+          document.write(nomes[i]);
+        }
+      }
+    </script>
+  </body>
+</html>

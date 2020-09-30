@@ -1,0 +1,29 @@
+~<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var titulo =
+        "Curso Profissional de Gestão e Programação de Sistemas informáticos";
+
+      document.write(titulo.charAt(6));
+      var n = titulo.indexOf("r");
+      document.write(n);
+
+      var d = titulo.lastIndexOf("r", 20);
+      document.write(d);
+
+      var uper = toUpperCase(titulo);
+      var lowe = titulo.toLowerCase();
+      document.write(uper);
+      document.write("<br/>");
+      document.write(lowe);
+      str = titulo.replace("Profissional", "");
+      document.write(str);
+    </script>
+  </body>
+</html>
