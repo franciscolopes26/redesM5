@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var array = ["benfica", "benfica", "benfica", "porto", "braga"];
+      var igual;
+      var nvezes = 1;
+      var nome = "";
+      for (i = 0; i < array.length; i++) {
+        igual = 0;
+        for (y = 0; y < array.length; y++) {
+          if (array[i] == array[y]) igual++;
+        }
+        if (igual > nvezes) {
+          nvezes = igual;
+          nome = array[i];
+        }
+      }
+      console.log(nvezes);
+      console.log(igual);
+      console.log(nome);
+    </script>
+  </body>
+</html>
