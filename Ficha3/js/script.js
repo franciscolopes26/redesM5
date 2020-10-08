@@ -7,9 +7,28 @@ function calcu() {
 }
 
 function adic() {
-  var inputElements = document.getElementsByName("lista1");
+  var inputElements = document.getElementsById("lista1");
   let resultado = document.getElementById("lista2");
-  let valuemarca = inputElements.options[inputElements.SelectedIndex].text;
-  inputElements.add(valuemarca.resultado);
-  resultado.add;
+  let valuemarca = inputElements.options[inputElements.SelectedIndex];
+  resultado.add(valuemarca);
+  resultado.SelectedIndex = -1;
+}
+function exeRemove() {
+  let disc = document.getElementById("lista2");
+  let valordisc = disc.options[disc.SelectedIndex];
+  let lista2 = document.getElementById("lista1");
+
+  lista1.add(valordisc);
+  lista2.SelectedIndex = -1;
+}
+function changePic1() {
+  document.getElementById("myImg").src = "smile2.png";
+}
+function changePic2() {
+  document.getElementById("myImg").src = "smile1.png";
+}
+function toNegrito() {
+  var pegar = (document.getElementById("text").style.fontWeight = "bold");
+  text.style.font - weight - bold;
+  text.style.text - center;
 }
