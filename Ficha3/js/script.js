@@ -10,5 +10,6 @@ function adic() {
   var inputElements = document.getElementsByName("lista1");
   let resultado = document.getElementById("lista2");
   let valuemarca = inputElements.options[inputElements.SelectedIndex].text;
-  resultado = valuemarca;
+  inputElements.add(valuemarca.resultado);
+  resultado.add;
 }
