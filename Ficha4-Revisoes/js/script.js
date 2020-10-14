@@ -65,12 +65,12 @@ function pass() {
 }
 
 function dist() {
-  let distrito = document.getElementById("selDistrito");
-  let distrito2 = document.getElementById("selConcelho");
+  let distrito = document.getElementById("selDistrito").value;
+  let distrito2 = document.getElementById("selConcelho").value;
   let selec = distrito.options[distrito.SelectedIndex];
-  var entry = document.createElement("option");
+  var entry = document.createElement("select");
   distrito2.selectObject.disabled = false;
-  if (selet == "lisboa") {
-    entry.innerHTML = "Oeiras";
-  }
+
+    transport_select.options[1] = new Option('TESTE', 'LTL');
+  
 }
