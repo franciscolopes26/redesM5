@@ -63,6 +63,7 @@ function pass() {
   } else label.innerHTML = "enrrou";
 }
 
+<<<<<<< HEAD
 function populate(s1, s2) {
   var s1 = document.getElementById(s1);
   var s2 = document.getElementById(s2);
@@ -86,4 +87,15 @@ function populate(s1, s2) {
     newOption.innerHTML = pair[1];
     s2.options.add(newOption);
   }
+=======
+function dist() {
+  let distrito = document.getElementById("selDistrito").value;
+  let distrito2 = document.getElementById("selConcelho").value;
+  let selec = distrito.options[distrito.SelectedIndex];
+  var entry = document.createElement("select");
+  distrito2.selectObject.disabled = false;
+
+    transport_select.options[1] = new Option('TESTE', 'LTL');
+  
+>>>>>>> francisco
 }
