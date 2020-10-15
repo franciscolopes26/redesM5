@@ -39,9 +39,8 @@ function mes(date) {
 function arrayunic(array) {
   var uniqueArray = [];
 
-  // Loop through array values
   for (i = 0; i < array.length; i++) {
-    if (uniqueArray.indexOf(array[i]) === -1) {
+    if (uniqueArray.indexOf(array[i]) == -1) {
       uniqueArray.push(array[i]);
     }
   }
@@ -64,13 +63,27 @@ function pass() {
   } else label.innerHTML = "enrrou";
 }
 
-function dist() {
-  let distrito = document.getElementById("selDistrito");
-  let distrito2 = document.getElementById("selConcelho");
-  let selec = distrito.options[distrito.SelectedIndex];
-  var entry = document.createElement("option");
-  distrito2.selectObject.disabled = false;
-  if (selet == "lisboa") {
-    entry.innerHTML = "Oeiras";
+function populate(s1, s2) {
+  var s1 = document.getElementById(s1);
+  var s2 = document.getElementById(s2);
+  s2.innerHTML = "";
+  if (s1.value == "Lisboa") {
+    var optionArray = ["|", "Oeiras|oeiras", "Mafra|mafra", "Sintra|sintra"];
+  } else if (s1.value == "Porto") {
+    var optionArray = ["|", "Maia|maia", "Gaia|gaia", "Matosinhos|matosinhos"];
+  } else if (s1.value == "Braga") {
+    var optionArray = [
+      "|",
+      "Vila Verde|vila verda",
+      "Guimarães|guimarães",
+      "Vizela|vizela",
+    ];
+  }
+  for (var option in optionArray) {
+    var pair = optionArray[option].split("|");
+    var newOption = document.createElement("option");
+    newOption.value = pair[0];
+    newOption.innerHTML = pair[1];
+    s2.options.add(newOption);
   }
 }

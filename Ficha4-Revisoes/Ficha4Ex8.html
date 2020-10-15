@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/script.js"></script>
   </head>
   <body>
     <div class="container">
@@ -17,10 +18,14 @@
           >Selecione um distrito:</label
         >
         <div class="col-3">
-          <select class="form-control" id="selDistrito" onselect="dist() ">
-            <option value="LB">Lisboa</option>
-            <option value="PT">Porto</option>
-            <option value="BG">Braga</option>
+          <select
+            class="form-control"
+            id="selDistrito"
+            onchange="populate(this.id,'slct2') "
+          >
+            <option value="Lisboa">Lisboa</option>
+            <option value="Porto">Porto</option>
+            <option value="Braga">Braga</option>
           </select>
         </div>
       </div>
@@ -29,7 +34,7 @@
           >Selecione um Concelho:</label
         >
         <div class="col-3">
-          <select class="form-control" id="selConcelho"></select>
+          <select class="form-control" id="slct2" name="slct2"></select>
         </div>
       </div>
     </div>
