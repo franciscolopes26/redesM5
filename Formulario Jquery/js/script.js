@@ -1,4 +1,15 @@
-function calculavalor() {
+$(document).ready(function () {
+  $("#formRentACar").submit(function (e) {
+    e.preventDefault();
+
+  });
+});
+
+
+
+
+
+/* function calculavalor() {
   let ndias = document.getElementById("nDias");
   let resultado = document.getElementById("resultado");
   let extras = document.getElementById("extras");
@@ -37,6 +48,7 @@ function calculavalor() {
     "<br/>" +
     extraa;
 }
+
 function validate() {
   var radius = document.getElementById("txtRaio").value;
   var resultado = document.getElementById("lblRes");
@@ -56,6 +68,7 @@ function add() {
   var label = document.getElementById("lblValues");
   return (label.innerHTML = conteudo.value);
 }
+
 function ordenar() {
   // var conteudo = document.getElementById("txtFrase").value;
 
@@ -64,4 +77,4 @@ function ordenar() {
   var conteudo = document.getElementById("txtFrase");
   var conteudo2 = document.getElementById("lblFrase");
   return (conteudo2.innerHTML = conteudo.value);
-}
+} */
